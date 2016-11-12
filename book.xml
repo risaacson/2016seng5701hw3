@@ -24,20 +24,27 @@
           <firstname>Richard</firstname>
           <surname>Isaacson</surname>
         </personname>
+        <email>isaac302@umn.edu</email>
       </author>
       <author>
         <personname>
           <firstname>Gideon</firstname>
           <surname>Odega</surname>
         </personname>
+        <email>ogega001@umn.edu</email>
       </author>
       <author>
         <personname>
           <firstname>Ezequiel</firstname>
           <surname>Santamaria</surname>
         </personname>
+        <email>santa117@umn.edu</email>
       </author>
     </authorgroup>
+
+    <publisher>
+      <publishername>Team Legendarium</publishername>
+    </publisher>
 
     <edition>First Edition</edition>
     <legalnotice>
@@ -59,8 +66,10 @@ the use of information (including program listings) contained herein.
   </info>
 
 
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="chapter01.xml"/>
+  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="chapter01.xml"/>
+  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="chapter02.xml"/>
+  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="chapter03.xml"/>
+  <!-- <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="bibliography.xml"/> -->
 
-
-  <index/>
+  <!-- <index/> -->
 </book>

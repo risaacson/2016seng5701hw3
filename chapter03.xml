@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE chapter [
+<!ENTITY % allent SYSTEM "w3centities-f.ent">
+%allent;
+]>
+<chapter version="5.0" xmlns="http://docbook.org/ns/docbook"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlns:xi="http://www.w3.org/2001/XInclude"
+      xmlns:svg="http://www.w3.org/2000/svg"
+      xmlns:mml="http://www.w3.org/1998/Math/MathML"
+      xmlns:html="http://www.w3.org/1999/xhtml"
+      xmlns:db="http://docbook.org/ns/docbook">
+
+      <title>Questions &amp; Challenges</title>
+
+      <section>
+        <title>What is easy?</title>
+        <para>
+We know all the entities, their names and attributes. For each individual entity it's also easy to see which other entities can contain it, or what entities the particular entity contains.
+        </para>
+      </section>
+
+      <section>
+        <title>What is hard?</title>
+        <para>
+There are no straightforward hierarchies. Most entities are related to almost every other entity, and even after collapsing them to hold common/shared descriptors, there are still a lot of hard, complex relations. In tree terms, each leaf can connect directly to the root element, skipping intermediate entities arbitrarily.
+        </para>
+        <para>
+There are no obvious identifiers. Parent entities are not strictly required, and each entity can have multiple types of parent entities.
+        </para>
+      </section>
+
+      <section>
+        <title>Example 1: Book</title>
+        <programlisting>
+&lt;book xmlns='http://docbook.org/ns/docbook'&gt;
+    &lt;title&gt;An Example Book&lt;/title&gt;
+    &lt;titleabbrev&gt;Example&lt;/titleabbrev&gt;
+    &lt;info&gt;
+        &lt;legalnotice&gt;
+            &lt;para&gt;No notice is required.&lt;/para&gt;
+        &lt;/legalnotice&gt;
+        &lt;author&gt;
+            &lt;personname&gt;
+                &lt;firstname&gt;Norman&lt;/firstname&gt;
+                &lt;surname&gt;Walsh&lt;/surname&gt;
+            &lt;/personname&gt;
+        &lt;/author&gt;
+    &lt;/info&gt;
+    &lt;dedication&gt;
+        &lt;para&gt;
+This book is dedicated to you.
+        &lt;/para&gt;
+    &lt;/dedication&gt;
+    &lt;preface&gt;
+        &lt;title&gt;Foreword&lt;/title&gt;
+        &lt;para&gt;
+Some content is always required.
+        &lt;/para&gt;
+    &lt;/preface&gt;
+    &lt;chapter&gt;
+        &lt;title&gt;A Chapter&lt;/title&gt;
+        &lt;para&gt;
+Content is required in chapters too.
+        &lt;/para&gt;
+    &lt;/chapter&gt;
+    &lt;appendix&gt;
+        &lt;title&gt;Optional Appendix&lt;/title&gt;
+        &lt;para&gt;
+Appendixes are optional.
+        &lt;/para&gt;
+    &lt;/appendix&gt;
+&lt;/book&gt;
+        </programlisting>
+      </section>
+
+      <section>
+        <title>Example 2: Section</title>
+        <programlisting>
+&lt;article xmlns='http://docbook.org/ns/docbook'&gt;
+&lt;title&gt;Example section&lt;/title&gt;
+
+&lt;para&gt;This &lt;tag&gt;article&lt;/tag&gt; uses recursive sections.&lt;/para&gt;
+
+
+&lt;section&gt;
+  &lt;title&gt;Like a Sect1&lt;/title&gt;
+  &lt;subtitle&gt;Or How I Learned to Let Go of Enumeration
+            and Love to Recurse&lt;/subtitle&gt;
+  &lt;info&gt;
+    &lt;abstract&gt;
+      &lt;para&gt;A trivial example of recursive sections.&lt;/para&gt;
+    &lt;/abstract&gt;
+  &lt;/info&gt;
+  &lt;para&gt;This section is like a Sect1.&lt;/para&gt;
+  &lt;section&gt;&lt;title&gt;Like a Sect2&lt;/title&gt;
+    &lt;para&gt;This section is like a Sect2.&lt;/para&gt;
+    &lt;section&gt;&lt;title&gt;Like a Sect3&lt;/title&gt;
+      &lt;para&gt;This section is like a Sect3.&lt;/para&gt;
+      &lt;section&gt;&lt;title&gt;Like a Sect4&lt;/title&gt;
+        &lt;para&gt;This section is like a Sect4.&lt;/para&gt;
+        &lt;section&gt;&lt;title&gt;Like a Sect5&lt;/title&gt;
+          &lt;para&gt;This section is like a Sect5.&lt;/para&gt;
+          &lt;section&gt;&lt;title&gt;Would be like a Sect6&lt;/title&gt;
+            &lt;para&gt;This section would be like a Sect6,
+                  if there were one.&lt;/para&gt;
+            &lt;section&gt;&lt;title&gt;Would be like a Sect7&lt;/title&gt;
+              &lt;para&gt;This section would be like a Sect7,
+                    if there was one.&lt;/para&gt;
+            &lt;/section&gt;
+          &lt;/section&gt;
+        &lt;/section&gt;
+      &lt;/section&gt;
+    &lt;/section&gt;
+  &lt;/section&gt;
+&lt;/section&gt;
+
+&lt;/article&gt;
+        </programlisting>
+      </section>
+
+</chapter>

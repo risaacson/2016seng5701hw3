@@ -10,7 +10,29 @@
       xmlns:mml="http://www.w3.org/1998/Math/MathML"
       xmlns:html="http://www.w3.org/1999/xhtml"
       xmlns:db="http://docbook.org/ns/docbook">
-      
-      <title>TITLE</title>
+
+      <title>Introduction</title>
       <para></para>
+
+      <section>
+        <title>What is DocBook and what is it used for?</title>
+        <blockquote>
+          <attribution>https://en.wikipedia.org/wiki/DocBook</attribution>
+          <para>
+DocBook is a semantic markup language for technical documentation. It was originally intended for writing technical documents related to computer hardware and software but it can be used for any other sort of documentation.
+          </para>
+        </blockquote>
+
+        <para>
+DocBook allows for you to compose books and articles with a standard syntax that can be compiled and styled into many formats. As source DocBook is an XML language. The compiled formats are not limited to HTML, EPUB, and PDF documents.
+        </para>
+      </section>
+
+      <section>
+        <title>How is DocBook organized?</title>
+        <para>
+Written DocBook like other XML is set up in a hierarchical tree of nested elements. The basic forms are for example a &lt;book&gt; or an &lt;article&gt;. A collection of books could be gathered into a &lt;set&gt;. A book could contain &lt;part&gt;s, &lt;chapter&gt;s and &lt;section&gt;s amongst many other elements. Elements such as &lt;para&gt; (paragraphs) could be under many parent elements.
+        </para>
+      </section>
+
 </chapter>

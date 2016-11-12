@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE chapter [
+<!ENTITY % allent SYSTEM "w3centities-f.ent">
+%allent;
+]>
+<chapter version="5.0" xmlns="http://docbook.org/ns/docbook"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlns:xi="http://www.w3.org/2001/XInclude"
+      xmlns:svg="http://www.w3.org/2000/svg"
+      xmlns:mml="http://www.w3.org/1998/Math/MathML"
+      xmlns:html="http://www.w3.org/1999/xhtml"
+      xmlns:db="http://docbook.org/ns/docbook">
+
+      <title>Model &amp; Examples</title>
+
+      <section>
+        <title>Reading of main entities</title>
+        <para>
+The highest level element is the set, which can contain books or other sets.
+        </para>
+
+        <para>
+A book can be divided into divisions, which can be further subdivided by components.
+        </para>
+        <orderedlist numeration="lowerroman">
+          <listitem>
+            <para>
+Components are the higher (chapter level) entities. These include articles, biographies, chapters, appendices, etc.
+            </para>
+          </listitem>
+          <listitem>
+            <para>
+Some components such as the article can also be divisions, since they can contain other components.
+            </para>
+          </listitem>
+        </orderedlist>
+
+        <para>
+Components can be further divided into sections, which can contain block elements (paragraphs, images, lists, etc) and inline elements (quotes, links, superscript, subscript, etc).
+        </para>
+
+        <para>
+For the larger elements, we can also remember meta information (title, subtitle, titleabbrev, info, etc).
+        </para>
+      </section>
+</chapter>
